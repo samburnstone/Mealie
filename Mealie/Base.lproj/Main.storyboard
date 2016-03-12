@@ -114,7 +114,7 @@
         <scene sceneID="GPD-jQ-qkI">
             <objects>
                 <navigationController title="Recipes" automaticallyAdjustsScrollViewInsets="NO" id="Zr4-Eq-jrU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recipes" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="Whisk" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jh8-9i-wb0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -153,4 +153,7 @@
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Whisk" width="50" height="60"/>
+    </resources>
 </document>
