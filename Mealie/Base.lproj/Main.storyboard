@@ -154,6 +154,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Whisk" width="50" height="60"/>
+        <image name="Whisk" width="25" height="30"/>
     </resources>
 </document>
