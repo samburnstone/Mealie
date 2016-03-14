@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  RecipeListViewController.swift
 //  Mealie
 //
 //  Created by Sam Burnstone on 12/03/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class RecipeListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class FirstViewController: UIViewController {
 
 }
 
-extension FirstViewController: UITableViewDataSource
+extension RecipeListViewController: UITableViewDataSource
 {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
@@ -34,7 +34,7 @@ extension FirstViewController: UITableViewDataSource
     }
 }
 
-extension FirstViewController: UITableViewDelegate
+extension RecipeListViewController: UITableViewDelegate
 {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
     {
