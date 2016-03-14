@@ -23,8 +23,6 @@ extension RecipeListViewController: UITableViewDataSource
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell")!
         
-        cell.textLabel?.text = "Cell \(indexPath.row)"
-        
         return cell
     }
     
