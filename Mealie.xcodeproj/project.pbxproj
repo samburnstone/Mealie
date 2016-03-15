@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F6F02E2E1C9492A700CA4539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F02E2D1C9492A700CA4539 /* AppDelegate.swift */; };
-		F6F02E301C9492A700CA4539 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F02E2F1C9492A700CA4539 /* FirstViewController.swift */; };
+		F6F02E301C9492A700CA4539 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F02E2F1C9492A700CA4539 /* RecipeListViewController.swift */; };
 		F6F02E321C9492A700CA4539 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F02E311C9492A700CA4539 /* SecondViewController.swift */; };
 		F6F02E351C9492A800CA4539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F02E331C9492A800CA4539 /* Main.storyboard */; };
 		F6F02E371C9492A800CA4539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F02E361C9492A800CA4539 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		F6F02E2A1C9492A700CA4539 /* Mealie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F02E2D1C9492A700CA4539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6F02E2F1C9492A700CA4539 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F6F02E2F1C9492A700CA4539 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		F6F02E311C9492A700CA4539 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F6F02E341C9492A800CA4539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6F02E361C9492A800CA4539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F02E2D1C9492A700CA4539 /* AppDelegate.swift */,
-				F6F02E2F1C9492A700CA4539 /* FirstViewController.swift */,
+				F6F02E2F1C9492A700CA4539 /* RecipeListViewController.swift */,
 				F6F02E311C9492A700CA4539 /* SecondViewController.swift */,
 				F6F02E331C9492A800CA4539 /* Main.storyboard */,
 				F6F02E361C9492A800CA4539 /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 			files = (
 				F6F02E321C9492A700CA4539 /* SecondViewController.swift in Sources */,
 				F6F02E2E1C9492A700CA4539 /* AppDelegate.swift in Sources */,
-				F6F02E301C9492A700CA4539 /* FirstViewController.swift in Sources */,
+				F6F02E301C9492A700CA4539 /* RecipeListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +296,7 @@
 				F6F02E401C9492A800CA4539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
