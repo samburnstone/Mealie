@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -23,19 +24,22 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" rowHeight="80" id="qFP-Xe-QAd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" rowHeight="80" id="qFP-Xe-QAd" customClass="RecipeListTableViewCell" customModule="Mealie" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qFP-Xe-QAd" id="emS-Zs-9No">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="qFP-Xe-QAd" id="emS-Zs-9No">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soup" translatesAutoresizingMaskIntoConstraints="NO" id="4pP-RU-f3o">
-                                                    <rect key="frame" x="18" y="8" width="120" height="63"/>
+                                                    <rect key="frame" x="18" y="13" width="53" height="53"/>
                                                     <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="4pP-RU-f3o" secondAttribute="height" multiplier="1:1" id="fgB-O2-qW5"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curried Vegetable Soup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWU-Si-42H">
-                                                    <rect key="frame" x="148" y="28" width="203" height="23"/>
+                                                    <rect key="frame" x="81" y="28" width="511" height="23"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,14 +49,24 @@
                                             <animations/>
                                             <constraints>
                                                 <constraint firstItem="4pP-RU-f3o" firstAttribute="leading" secondItem="emS-Zs-9No" secondAttribute="leadingMargin" constant="10" id="Mfi-wN-nC9"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="4pP-RU-f3o" secondAttribute="bottom" id="WtO-Lo-ZAv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4pP-RU-f3o" secondAttribute="bottom" constant="5" id="WtO-Lo-ZAv"/>
                                                 <constraint firstItem="mWU-Si-42H" firstAttribute="centerY" secondItem="emS-Zs-9No" secondAttribute="centerY" id="gb8-56-rv3"/>
-                                                <constraint firstItem="4pP-RU-f3o" firstAttribute="top" secondItem="emS-Zs-9No" secondAttribute="topMargin" id="lN0-wz-KaU"/>
+                                                <constraint firstItem="4pP-RU-f3o" firstAttribute="top" secondItem="emS-Zs-9No" secondAttribute="topMargin" constant="5" id="lN0-wz-KaU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mWU-Si-42H" secondAttribute="trailing" id="lod-3a-AMp"/>
                                                 <constraint firstItem="mWU-Si-42H" firstAttribute="leading" secondItem="4pP-RU-f3o" secondAttribute="trailing" constant="10" id="lvL-SD-Iie"/>
                                                 <constraint firstItem="4pP-RU-f3o" firstAttribute="width" secondItem="emS-Zs-9No" secondAttribute="width" multiplier="0.2" id="p2p-Xu-cyz"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="p2p-Xu-cyz"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="recipeImageView" destination="4pP-RU-f3o" id="Ri6-b2-MfZ"/>
+                                            <outlet property="titleLabel" destination="mWU-Si-42H" id="vmD-2a-02m"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

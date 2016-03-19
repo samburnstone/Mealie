@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60E6F781C98A0AE001DFECC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E6F771C98A0AE001DFECC /* Recipe.swift */; settings = {ASSET_TAGS = (); }; };
+		F60E6F7C1C98A163001DFECC /* RecipeListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E6F7B1C98A163001DFECC /* RecipeListProvider.swift */; settings = {ASSET_TAGS = (); }; };
+		F6C2D5321C9DE2E80035EE97 /* RecipeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2D5311C9DE2E80035EE97 /* RecipeListTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		F6F02E2E1C9492A700CA4539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F02E2D1C9492A700CA4539 /* AppDelegate.swift */; };
 		F6F02E301C9492A700CA4539 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F02E2F1C9492A700CA4539 /* RecipeListViewController.swift */; };
 		F6F02E321C9492A700CA4539 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F02E311C9492A700CA4539 /* SecondViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60E6F771C98A0AE001DFECC /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		F60E6F7B1C98A163001DFECC /* RecipeListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListProvider.swift; sourceTree = "<group>"; };
+		F6C2D5311C9DE2E80035EE97 /* RecipeListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewCell.swift; sourceTree = "<group>"; };
 		F6F02E2A1C9492A700CA4539 /* Mealie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F02E2D1C9492A700CA4539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F02E2F1C9492A700CA4539 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F60E6F791C98A0B2001DFECC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F60E6F771C98A0AE001DFECC /* Recipe.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F60E6F7A1C98A0BA001DFECC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6F02E2F1C9492A700CA4539 /* RecipeListViewController.swift */,
+				F6F02E311C9492A700CA4539 /* SecondViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F6C2D5331C9DE9700035EE97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6C2D5311C9DE2E80035EE97 /* RecipeListTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		F6F02E211C9492A700CA4539 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				F6F02E2D1C9492A700CA4539 /* AppDelegate.swift */,
-				F6F02E2F1C9492A700CA4539 /* RecipeListViewController.swift */,
-				F6F02E311C9492A700CA4539 /* SecondViewController.swift */,
+				F60E6F7B1C98A163001DFECC /* RecipeListProvider.swift */,
+				F6C2D5331C9DE9700035EE97 /* Views */,
+				F60E6F7A1C98A0BA001DFECC /* ViewControllers */,
+				F60E6F791C98A0B2001DFECC /* Models */,
 				F6F02E331C9492A800CA4539 /* Main.storyboard */,
 				F6F02E361C9492A800CA4539 /* Assets.xcassets */,
 				F6F02E381C9492A800CA4539 /* LaunchScreen.storyboard */,
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F02E321C9492A700CA4539 /* SecondViewController.swift in Sources */,
+				F60E6F7C1C98A163001DFECC /* RecipeListProvider.swift in Sources */,
 				F6F02E2E1C9492A700CA4539 /* AppDelegate.swift in Sources */,
+				F6C2D5321C9DE2E80035EE97 /* RecipeListTableViewCell.swift in Sources */,
 				F6F02E301C9492A700CA4539 /* RecipeListViewController.swift in Sources */,
+				F60E6F781C98A0AE001DFECC /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
